@@ -1,0 +1,76 @@
+{
+  "product": [
+    {
+      "id ": 1,
+      "name": "Shorts",
+      "price": 40,
+      "priceWithDiscount": 35,
+      "isNew": true,
+      "ratings": 3
+    },
+    {
+      "id ": 2,
+      "name": "Green Sweat shirt ",
+      "price": 40,
+      "priceWithDiscount": 35,
+      "isNew": true,
+      "ratings": 4
+    },
+    {
+      "id ": 3,
+      "name": "yellow T-Shirt",
+      "price": 50,
+      "priceWithDiscount": 40,
+      "isNew": false,
+      "ratings": 3
+    },
+    {
+      "id ": 4,
+      "name": "Grey T-shirt",
+      "price": 60,
+      "priceWithDiscount": 45,
+      "isNew": true,
+      "ratings": 2
+    },
+    {
+      "id ": 5,
+      "name": "Black Pant",
+      "price": 70,
+      "priceWithDiscount": 65,
+      "isNew": false,
+      "ratings": 5
+    },
+    {
+      "id ": 6,
+      "name": "White Jacket",
+      "price": 40,
+      "priceWithDiscount": 35,
+      "isNew": false,
+      "ratings": 5
+    },
+    {
+      "id ": 7,
+      "name": "BLack T-shirt",
+      "price": 80,
+      "priceWithDiscount": 50,
+      "isNew": false,
+      "ratings": 3
+    },
+    {
+      "id ": 8,
+      "name": "BLack T-shirt",
+      "price": 40,
+      "priceWithDiscount": 35,
+      "isNew": false,
+      "ratings": 4
+    },
+    {
+      "id ": 9,
+      "name": "Combo 0f 6 T-shirt",
+      "price": 60,
+      "priceWithDiscount": 50,
+      "isNew": true,
+      "ratings": 2
+    }
+  ]
+}
