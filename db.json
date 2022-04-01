@@ -1,7 +1,7 @@
 {
   "product": [
     {
-      "id ": 1,
+      "id": 1,
       "name": "Shorts",
       "price": 40,
       "priceWithDiscount": 35,
@@ -10,7 +10,7 @@
       "ratings": 3
     },
     {
-      "id ": 2,
+      "id": 2,
       "name": "Green Sweat shirt ",
       "price": 40,
       "priceWithDiscount": 35,
@@ -19,7 +19,7 @@
       "ratings": 4
     },
     {
-      "id ": 3,
+      "id": 3,
       "name": "yellow T-Shirt",
       "price": 50,
       "priceWithDiscount": 40,
@@ -28,7 +28,7 @@
       "ratings": 3
     },
     {
-      "id ": 4,
+      "id": 4,
       "name": "Grey T-shirt",
       "price": 60,
       "priceWithDiscount": 45,
