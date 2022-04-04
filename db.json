@@ -25,7 +25,7 @@
       "priceWithDiscount": 40,
       "isNew": false,
       "imageName": "product3",
-      "ratings": 3
+      "ratings": 3.5
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "priceWithDiscount": 45,
       "isNew": true,
       "imageName": "product4",
-      "ratings": 2
+      "ratings": 2.8
     },
     {
       "id": 5,
@@ -70,7 +70,7 @@
       "priceWithDiscount": 35,
       "isNew": false,
       "imageName": "product2",
-      "ratings": 4
+      "ratings": 4.5
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "priceWithDiscount": 50,
       "isNew": true,
       "imageName": "product3",
-      "ratings": 2
+      "ratings": 2.5
     }
   ]
 }
