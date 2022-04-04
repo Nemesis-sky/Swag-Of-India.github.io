@@ -60,7 +60,7 @@
       "price": 80,
       "priceWithDiscount": 50,
       "isNew": false,
-      "imageName": "product7",
+      "imageName": "product1",
       "ratings": 3
     },
     {
@@ -69,7 +69,7 @@
       "price": 40,
       "priceWithDiscount": 35,
       "isNew": false,
-      "imageName": "product8",
+      "imageName": "product2",
       "ratings": 4
     },
     {
@@ -78,7 +78,7 @@
       "price": 60,
       "priceWithDiscount": 50,
       "isNew": true,
-      "imageName": "product9",
+      "imageName": "product3",
       "ratings": 2
     }
   ]
