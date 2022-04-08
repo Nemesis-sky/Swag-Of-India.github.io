@@ -7,7 +7,8 @@
       "priceWithDiscount": 35,
       "isNew": true,
       "imageName": "product1",
-      "ratings": 3
+      "ratings": 3,
+      "inCart":0
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "priceWithDiscount": 35,
       "isNew": true,
       "imageName": "product2",
-      "ratings": 4
+      "ratings": 4,
+      "inCart":0
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "priceWithDiscount": 40,
       "isNew": false,
       "imageName": "product3",
-      "ratings": 3.5
+      "ratings": 3.5,
+      "inCart":0
     },
     {
       "id": 4,
@@ -52,7 +55,8 @@
       "priceWithDiscount": 35,
       "isNew": false,
       "imageName": "product6",
-      "ratings": 5
+      "ratings": 5,
+      "inCart":0 
     },
     {
       "id": 7,
@@ -61,7 +65,8 @@
       "priceWithDiscount": 50,
       "isNew": false,
       "imageName": "product1",
-      "ratings": 3
+      "ratings": 3,
+        "inCart":0
     },
     {
       "id": 8,
@@ -70,7 +75,8 @@
       "priceWithDiscount": 35,
       "isNew": false,
       "imageName": "product2",
-      "ratings": 4.5
+      "ratings": 4.5,
+        "inCart":0
     },
     {
       "id": 9,
@@ -79,7 +85,8 @@
       "priceWithDiscount": 50,
       "isNew": true,
       "imageName": "product3",
-      "ratings": 2.5
+      "ratings": 2.5,
+        "inCart":0
     }
   ]
 }
