@@ -37,7 +37,7 @@
       "priceWithDiscount": 45,
       "isNew": true,
       "imageName": "product4",
-      "ratings": 2.8
+      "ratings": 2.8,
       "inCart":0
     },
     {
@@ -47,7 +47,7 @@
       "priceWithDiscount": 65,
       "isNew": false,
       "imageName": "product5",
-      "ratings": 5
+      "ratings": 5,
       "inCart":0
     },
     {
