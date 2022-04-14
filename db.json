@@ -38,6 +38,7 @@
       "isNew": true,
       "imageName": "product4",
       "ratings": 2.8
+      "inCart":0
     },
     {
       "id": 5,
@@ -47,6 +48,7 @@
       "isNew": false,
       "imageName": "product5",
       "ratings": 5
+      "inCart":0
     },
     {
       "id": 6,
@@ -66,7 +68,7 @@
       "isNew": false,
       "imageName": "product7",
       "ratings": 3,
-        "inCart":0
+       "inCart":0
     },
     {
       "id": 8,
@@ -76,7 +78,7 @@
       "isNew": false,
       "imageName": "product8",
       "ratings": 4.5,
-        "inCart":0
+      "inCart":0
     },
     {
       "id": 9,
@@ -86,7 +88,7 @@
       "isNew": true,
       "imageName": "product9",
       "ratings": 2.5,
-        "inCart":0
+      "inCart":0
     }
   ]
 }
