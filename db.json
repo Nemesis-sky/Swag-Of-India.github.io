@@ -8,7 +8,8 @@
       "isNew": true,
       "imageName": "product1",
       "ratings": 3,
-      "inCart":0
+      "inCart":0,
+      "wishlist":false
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "isNew": true,
       "imageName": "product2",
       "ratings": 4,
-      "inCart":0
+      "inCart":0,
+      "wishlist":false
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "isNew": false,
       "imageName": "product3",
       "ratings": 3.5,
-      "inCart":0
+      "inCart":0,
+      "wishlist":false
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "isNew": true,
       "imageName": "product4",
       "ratings": 2.8,
-      "inCart":0
+      "inCart":0,
+      "wishlist":false
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "isNew": false,
       "imageName": "product5",
       "ratings": 5,
-      "inCart":0
+      "inCart":0,
+      "wishlist":false
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "isNew": false,
       "imageName": "product6",
       "ratings": 5,
-      "inCart":0 
+      "inCart":0,
+      "wishlist":false
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "isNew": false,
       "imageName": "product7",
       "ratings": 3,
-       "inCart":0
+      "inCart":0,
+      "wishlist":false
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "isNew": false,
       "imageName": "product8",
       "ratings": 4.5,
-      "inCart":0
+      "inCart":0,
+      "wishlist":false
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "isNew": true,
       "imageName": "product9",
       "ratings": 2.5,
-      "inCart":0
+      "inCart":0,
+      "wishlist":false
     }
   ]
 }
