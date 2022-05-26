@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- CSS only of boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!--For icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" />
+    <!-- Css files -->
+    <link rel="stylesheet" href="css/style3.css" />
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- ---------------header where icon searchbar is implemented -------------------- -->
+    <header>
+        <div class="hero">
+            <div class="row top-header">
+                <div class="col-lg-2 col-md-3 col-sm-3 col-4 icon-holder">
+                    <a href=""><img src="Images/facebook round.png" alt=""></a>
+                    <a href=""><img src="Images/Group 2556.png" alt=""></a>
+                    <a href=""><img src="Images/Group 2557.png" alt=""></a>
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-7 col-8 searchbar">
+                    <input type="search" placeholder="  Search product and brands">
+                    <img src="images/Path 12337.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-1 col-sm-1 col-1 top-right-list-container">
+                    <ul class="top-right-list">
+                        <li> <img src="Images/phone.png" alt=""></li>
+                        <li><span id="country-no">+91 9838203708 </span></li>
+                        <li><a href="seller page.html">Sell on company</a></li>
+                        <li>Download app</li>
+                        <li><img src="Images/India.png" id="flag" alt="">
+                            <select name="" id="selector" class="country">
+                                <option id="english" value="india">INDIA</option>
+                                <option id="hindi" value="english">ENGLAND</option>
+                                <option id="french" value="germany">GERMANY</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <div class="h-line"></div>
+                        <div class="h-line"></div>
+                        <div class="h-line"></div>
+                    </div>
+                </div>
+                <div class="top-right-list-container-2">
+                    <ul class="top-right-list-2">
+                        <li> <img src="Images/phone.png" alt=""></li>
+                        <li><span id="country-no">+91 9838203708 </span></li>
+                        <li><a href="seller page.html">Sell on company</a></li>
+                        <li>Download app</li>
+                        <li><img src="Images/India.png" id="flag" alt="">
+                            <select name="" id="selector" class="country">
+                                <option id="english" value="india">INDIA</option>
+                                <option id="hindi" value="english">ENGLAND</option>
+                                <option id="french" value="germany">GERMANY</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--A logo and menu which content Home category etc....-->
+    <nav class="logo-container" id="header">
+        <a href="index.html"><img src="Images/logo-1.png" alt="Website logo Swag of india" /></a>
+        <ul class="navbars">
+            <li>
+                <a href="index.html">Home</a>
+                <div class="dropdown-content">
+                    
+                </div>
+            </li>
+            <li>
+                <a href="">Category</a>
+                <div class="dropdown-content">
+                    <a href="#">WOMEN</a>
+                    <a href="#">ETHNIC WEAR</a>
+                    <a href="#">MEN</a>
+                </div>
+            </li>
+            <li>
+                <a href="">Order</a>
+                <div class="dropdown-content">
+                    <a href="My order.html">My Order</a>
+                    <a href="track order.html">Track Order</a>
+                    <a href="Return order.html">Return Order </a>
+                </div>
+            </li>
+            <li>
+                <a href="">Wishlist <span id="wishlist-count">0</span></a>
+                <div class="dropdown-content">
+                    <a href="wishlist.html">My Wishlist</a>
+                </div>
+            </li>
+            <li>
+                <a href="">Profile</a>
+                <div class="dropdown-content">
+                    <a href="edit profile.html">Edit Profile</a>
+                </div>
+            </li>
+            <li>
+                <a href="">Cart <span id="cart-count">0</span> </a>
+                <div class="dropdown-content">
+                    <a href="My cart.html">My Cart</a>
+                </div>
+            </li>
+        </ul>
+        <a href="login.html" class="signin" role="button">Sign In</a>
+    </nav>
+    <!--This hero div sets the content in the middle-->
+    <div class="hero2"> 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page"><a href="index.html">Home</a></li>
+            </ol>
+        </nav>
+        <!--This code is for make menu resposnive with hamburger which is took from boostap-->
+        <div class="offcan">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <img src="Images/logo-1.png" alt="Website logo swag of india" class="main-logo" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <img src="Images/logo-1.png" alt="logo" class="main-logo" />
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Home
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Category
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#">WOMEN</a></li>
+                                        <li><a class="dropdown-item" href="#">ETHNIC WEAR</a></li>
+                                        <li><a class="dropdown-item" href="#">MEN</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Order
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="My order.html">My Order</a></li>
+                                        <li><a class="dropdown-item" href="track order.html">Track Order</a></li>
+                                        <li><a class="dropdown-item" href="Return order.html">Return Order</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Wishlist <span id="wishlist-count">0</span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="wishlist.html">My Wishlist</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Profile
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="edit profile.html">Edit Profile</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Cart <span id="cart-count">0</span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="My cart.html">My Cart</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!--This is the top right sign in Button-->
+                            <a href="login.html" class="signin" role="button">Sign In</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--This is the  image and discount conatainer with boostrap carausal-->
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/Group 2599.png" class="d-block w-100" alt="...">
+                    <div class="cta">
+                        <span class="discount">60% Discount</span>
+                        <span class="collection">Ethnic</span>
+                        <span class="collection">Collection</span>
+                        <span class="best_collection">Best cloth collection of 2020!</span>
+                        <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/Group 2599.png" class="d-block w-100" alt="...">
+                    <div class="cta">
+                        <span class="discount">60% Discount</span>
+                        <span class="collection">Ethnic</span>
+                        <span class="collection">Collection</span>
+                        <span class="best_collection">Best cloth collection of 2020!</span>
+                        <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/Group 2599.png" class="d-block w-100" alt="...">
+                    <div class="cta">
+                        <span class="discount">60% Discount</span>
+                        <span class="collection">Ethnic</span>
+                        <span class="collection">Collection</span>
+                        <span class="best_collection">Best cloth collection of 2020!</span>
+                        <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--This is new container which contain images with category like women men etc with boostrap carausal-->
+    <section class="shop">
+        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="category-shop">
+                        <div class="cat">
+                            <img src="Images/cat1.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">WOMEN</span>
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <img src="Images/cat2.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">ETHNIC WEAR</span>
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <img src="Images/cat3.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">MEN</span>
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="category-shop">
+                        <div class="cat">
+                            <img src="Images/cat1.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">WOMEN</span>
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <img src="Images/cat2.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">ETHNIC WEAR</span>   
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <img src="Images/cat3.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">MEN</span>
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="carousel-item">
+                    <div class="category-shop">
+                        <div class="cat">
+                            <img src="Images/cat1.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">WOMEN</span>
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <img src="Images/cat2.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">ETHNIC WEAR</span>
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                        <div class="cat">
+                            <img src="Images/cat3.png"  alt="...">
+                            <div class="category-name">
+                                <span class="bold">MEN</span>
+                                <button class="shop-now"><a href="Product listing page.html">Shop Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="category-product">
+            <div class="category-product-holder">
+                <img src="images/cat1.png" alt="">
+                <div class="category-name">
+                    <span>WOMEN</span>
+                    <button class="shop-now">Shop Now</button>
+                </div>
+            </div>
+            <div class="category-product-holder">
+                <img src="images/cat2.png" alt="">
+                <div class="category-name">
+                    <span>ETHIC WEAR</span>
+                    <button class="shop-now">Shop Now</button>
+                </div>
+            </div>
+            <div class="category-product-holder">
+                <img src="images/cat3.png" alt="">
+                <div class="category-name">
+                    <span>MEN</span>
+                    <button class="shop-now">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--menu which is infront of Latest product text -->
+    <section class="shop">
+            <div class="latest-product-category">
+                <div>
+                    <h1 class="shop_heading">LATEST PRODUCTS</h1>
+                </div>
+                <div>
+                    <nav class="shop_navbar">
+                        <a href="">All</a>
+                        <a href="">Featured</a>
+                        <a href="">Popular</a>
+                        <a href="">Sale</a>
+                        <a href="">Best rated</a>
+                    </nav>
+                </div>
+            </div>
+            <!--This is all latest products section-->
+            <section>
+                <div class="row product" id="home-product">
+                    <!--  -->
+                </div>
+            </section>
+    
+        <!--This the the viewmore button which is bottom of latest product images-->
+        <div class="viewmore">
+            <a href="Product listing page.html"><input type="button" value="View More +" role="button"></a>
+        </div>
+    </section>
+    <!--This section is about all feature statements of website-->
+    <section class="promises">
+        <div class="row">
+            <div class="col promise">
+                <img src="Images/Image 34.png" alt="100% Secure Payment" class="promise_image" />
+                <span class="promise_title">100% Secure Payment</span>
+                <p>
+                    Turpis Eleifend Vitae Malesuada Magna
+                    Congue.Damus id Ullamcorper neque
+                </p>
+            </div>
+            <div class="col promise">
+                <img src="Images/Image 35.png" alt="TRUSTPAY" class="promise_image" />
+                <span class="promise_title">TRUSTPAY</span>
+                <p>
+                    Turpis Eleifend Vitae Malesuada Magna
+                    Congue.Damus id Ullamcorper neque
+                </p>
+            </div>
+            <div class="col promise">
+                <img src="Images/Image 36.png" alt="HELP CENTER" class="promise_image" />
+                <span class="promise_title">HELP CENTER</span>
+                <p>
+                    Turpis Eleifend Vitae Malesuada Magna
+                    Congue.Damus id Ullamcorper neque
+                </p>
+            </div>
+            <div class="col promise"><img src="Images/Image 37.png" alt="SHOP ON THE GO" class="promise_image" />
+                <span class="promise_title">SHOP ON THE GO</span>
+                <p>
+                    Turpis Eleifend Vitae Malesuada Magna
+                    Congue.Damus id Ullamcorper neque
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--This section contains all privcy and policy statements with some other links-->
+    <div class="row o-details hero">
+        <div class="col">
+            <ul>
+                <li><strong>PRIVACY INFO</strong></li>
+                <li>Privacy policy</li>
+                <li>Terms of Sale</li>
+                <li>Terms of use</li>
+                <li>Report abuse & takedown policy</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li><strong>COMPANY</strong></li>
+                <li>About us</li>
+                <li>Core Values</li>
+                <li>careers</li>
+                <li>Blog</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li><strong>SNAPDEAL BUSINESS</strong></li>
+                <li>shopping app</li>
+                <li>sell on snapdeal</li>
+                <li>Advertise on Snapdeal</li>
+                <li>Media Enquries</li>
+                <li>Be an Affiliate</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li><strong>NEED HELP</strong></li>
+                <li>FAQ</li>
+                <li>Contact us</li>
+                <li>Online shopping</li>
+                <li>Blog</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div class="col Subscribe">
+            <p><strong>SUBSCRIBE</strong></p>
+            <input type="text" placeholder="Your Email Address">
+            <input type="button" value="Subscribe">
+            <p>Register now to get updates on promotions and coupons. Or <a href="" class="text-primary">Download
+                    App.</a></p>
+        </div>
+    </div>
+    <hr>
+    <!--This is the footer of website which contain payment images and connect social images-->
+    <footer class="container footer" role="contentinfo">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <span><strong>PAYMENT</strong></span>
+                <ul class="foot">
+                    <li><img src="Images/Image 39.png"> </li>
+                    <li><img src="Images/Image 40.png"> </li>
+                    <li><img src="Images/Image 41.png"> </li>
+                    <li><img src="Images/Image 42.png" alt="cash on delivery"> </li>
+                    <li><img src="Images/Image 43.png" alt="net banking"> </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <span><strong>CONNECT</strong></span>
+                <ul class="foot">
+                    <li><img src="Images/Image 44.png" alt="facebook"> </li>
+                    <li><img src="Images/Image 45.png" alt="twitter"> </li>
+                    <li><img src="Images/Image 46.png" alt="youtube"> </li>
+                    <li><img src="Images/Image 47.png" alt="instagram"> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button class="go-top" id="go-top">^</button>
+    <!-- Javascript files -->
+    <script src="javascript/main.js"></script>
+</body>
+
+</html>

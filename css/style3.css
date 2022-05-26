@@ -1,0 +1,2004 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: smooch;
+  src: url(../Smooch/Smooch-Regular.ttf);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+}
+
+/*hero class sets the content in the middle*/
+.hero,
+.hero2 {
+  width: 70%;
+  margin: auto;
+}
+
+/* ------------header------------ */
+header {
+  background-color: rgb(248, 110, 60);
+  display: flex;
+  justify-content: center;
+}
+
+.top-header {
+  margin: 10px;
+}
+
+/*icon size*/
+.icon-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .icon-holder img {
+  height: 2.0em;
+}
+
+/*Sets searchbar radius*/
+.searchbar {
+  position: relative;
+  font-size: 15px;
+}
+
+.searchbar img {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+.searchbar input {
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+}
+
+/*conatains top right list*/
+.top-right-list-container {
+  display: flex;
+  font-size: 1vw;
+
+}
+
+.top-right-list,
+.top-right-list-2 {
+  display: flex;
+  list-style: none;
+  top: 7px;
+  padding: 0;
+  white-space: nowrap;
+  align-items: baseline;
+}
+
+.top-right-list-container-2 {
+  font-size: 1vw;
+}
+
+.top-right-list li:not(:first-child, :last-child) {
+  margin-right: 10px;
+}
+
+.top-right-list-2 li:not(:first-child, :last-child) {
+  margin-right: 10px;
+}
+
+img[src="Images/phone.png"] {
+  height: 20px;
+}
+
+#flag {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.country {
+  background: transparent;
+  border: none;
+  width: 80px;
+}
+
+/* Making hamburger icon */
+.hamburger {
+  border: 1px solid black;
+  display: none;
+  height: 35px;
+}
+
+.h-line {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+}
+
+.offcan {
+  display: none;
+  /*only display for smaller devices*/
+}
+
+/*header closed*/
+
+/*section which contain logo menu which contain home category*/
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+  width: 70%;
+  margin: auto;
+}
+
+.main-logo {
+  height: 70px;
+  width: 100px;
+}
+
+/*menu which contain home category etc...*/
+.navbars {
+  align-self: flex-end;
+  justify-self: right;
+  width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.navbars li {
+  list-style: none;
+  margin: 0 1rem;
+  font-size: 16px;
+  line-height: 32px;
+  position: relative;
+}
+
+/*dropdown content of menu which is after logo*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 120px;
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  border-top: 3px solid #f8881f;
+  font-size: 14px;
+  background-color: white;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.dropdown-content a {
+  height: 36px;
+  padding: 0 1rem;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(212, 207, 199);
+  font-weight: 700;
+}
+
+.navbars li:hover .dropdown-content {
+  display: flex;
+}
+#wishlist-count,#cart-count{
+  padding: 4px;
+  background-color: #f8881f;
+  color: white;
+  border-radius: 100%;
+}
+
+/* sign in button top right*/
+.signin {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: rgb(248, 110, 60);
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 50px;
+  justify-self: baseline;
+  top: 20px;
+}
+
+/*breadcrumb css*/
+.breadcrumb {
+  background-color: rgb(212, 207, 199);
+  color: black;
+}
+
+ol.breadcrumb li.active {
+  font-weight: 700;
+}
+
+/*discount text caraousal button size*/
+div.carousel-indicators button {
+  height: 1vw !important;
+  width: 1vw !important;
+  border-radius: 50%;
+  background-color: white !important;
+  z-index: -1 !important;
+}
+
+/*div which contain all discount text*/
+.hero_container {
+  display: flex;
+  height: 500px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+/*image which is left side of discount text*/
+.discount-carousel {
+  width: 100% !important;
+  height: 100% !important;
+}
+/*styling of discount text*/
+.cta {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  right: 30%;
+  bottom: 20%;
+  justify-content: left;
+}
+
+/*each text style differently*/
+.discount {
+  font-family: smooch;
+  font-size: 1.5vw;
+  color: greenyellow;
+}
+
+.collection {
+  display: flex;
+  font-size: 4vw;
+  color: white;
+  flex-direction: column;
+  font-family: roboto;
+  font-weight: 700;
+}
+
+.shop-now {
+  border: none;
+  white-space: nowrap;
+  background-color: #f8881f;
+  color: white;
+  border-radius: 50px;
+  font-size: 1vw;
+  width: 6vw;
+  padding: 0.5vw;
+  font-weight: 600;
+  box-shadow: 0 8px 10px grey ;
+}
+
+.best_collection {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.5vw;
+  color: greenyellow;
+}
+
+/*styling of section which is after carausal of discount*/
+.shop {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 70%;
+}
+.category-shop{
+  display: flex;
+  justify-content: space-around !important;
+}
+.cat{
+  position: relative;
+  height: 11vw;
+}
+.cat img{
+  height: 100%;
+  width: 100%;
+}
+.category-product{
+  width: 80%;
+  flex-wrap: wrap;
+  display: none;
+  align-items: center;
+  margin: auto;
+}
+.category-product-holder{
+  position: relative;
+}
+.category-product img{
+  width: 50vw;
+  height: 40vw;
+  margin-bottom: 20px;
+}
+.category-name{
+  position: absolute;
+  right: 8%;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+/*Latest product text and infront menu*/
+.latest-product-category{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.latest-product-category div{
+  display: inline;
+  width: fit-content;
+}
+.shop_heading {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.shop_navbar a {
+  font-size: 25px;
+  font-weight: 200;
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s ease;
+  line-height: 3rem;
+  padding-right: 15px;
+}
+
+.shop_navbar a:hover {
+  font-weight: 600;
+  border-bottom-color: red;
+}
+
+/*-------------------------------------------------------------------*/
+/*all latest products*/
+.product {
+  text-align: center;
+}
+
+.dark {
+  font-weight: 600;
+}
+
+.strike-text {
+  text-decoration: line-through;
+}
+
+.orange {
+  color: orangered;
+}
+
+.card {
+  position: relative !important;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  text-align: center;
+} 
+
+/* review stars css */
+.review-stars {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.review-stars i {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  color: #f8881f;
+}
+
+/* styling new label */
+.new-tag {
+  position: absolute;
+  height: 6%;
+  width: 16%;
+  background-color: red;
+  border-radius: 10px;
+  right: 5%;
+  top: 7%;
+  line-height: 26px;
+  color: white;
+  font-weight: 600;
+
+}
+
+/*wishlist,add to cart icons whcih is visible on hover*/
+.hover-icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hover-icon i {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #f8881f;
+  color: #f8881f;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-icon i:hover {
+  background-color: #f8881f;
+  color: white;
+}
+
+/*---------------------------------------------------------------*/
+/*view more button*/
+.viewmore {
+  width: 90px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.viewmore input {
+  background-color: orangered;
+  color: white;
+  border-radius: 30px;
+  padding: 8px;
+  border: none;
+}
+
+.viewmore input:hover {
+  background-color: white;
+  color: orangered;
+  border: 1px solid black;
+}
+
+/*styling of all feature statements and images */
+.promises {
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.promise {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid rgb(233, 230, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promise span {
+  font-weight: 900;
+}
+
+.promise p {
+  text-align: center;
+  font-size: 13px;
+  color: #6e7f7e;
+
+}
+
+/*styling privacy policy and other links*/
+.o-details {
+  margin-top: 60px;
+  font-size: 13px;
+  width: 76%;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.o-details ul li:not(:first-child) {
+  color: #6e7f7e;
+}
+
+.o-details ul {
+  list-style-type: none;
+}
+
+/*styling of subscribe button and input*/
+[ value=Subscribe] {
+  background-color: black;
+  color: white;
+  padding: 3px;
+}
+
+[type=text] {
+  padding: 3px;
+}
+
+.Subscribe p:last-child {
+  white-space: normal;
+  color: #6e7f7e;
+}
+
+/*styling of footer which contain payment and connect*/
+.footer {
+  padding-left: 10%;
+  flex-wrap: wrap;
+}
+
+.foot {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  right: 4%;
+}
+
+.foot li {
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+/* Button to go top of the page*/
+.go-top {
+  position: absolute;
+  display: none;
+}
+
+/* classes to apply throgh js*/
+/*for button to go top*/
+.change-btn {
+  display: block;
+  position: fixed;
+  float: right;
+  right: 10%;
+  top: 600px;
+  border: none;
+  background-color: rgb(36, 243, 36);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  color: white;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+/*for navbar to make sticky*/
+.change-header {
+  position: fixed;
+  top: 0%;
+  z-index: 15;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+.heading-for-all {
+  color: orangered;
+  font-weight: 700;
+  font-size: large;
+}
+
+.green {
+  color: rgb(30, 206, 30);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.faint {
+  color: rgb(159, 159, 159);
+  font-size: small;
+  margin-top: 10px;
+}
+
+/* Track order details  */
+.ordered-product-container,
+.wishlist-product-container {
+  border-top: 1px solid rgb(216, 213, 213);
+  border-bottom: 1px solid rgb(216, 213, 213);
+  font-size: medium;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.ordered-product,
+.wishlist-product {
+  margin: 20px;
+}
+
+.ordered-product-image {
+  height: 100px;
+  width: 100px;
+}
+
+.track-link a {
+  color: rgb(2, 121, 248);
+  text-decoration: underline;
+  font-size: small;
+}
+
+.orange {
+  color: orange;
+}
+
+.red {
+  color: red;
+}
+
+.voilet {
+  color: rgb(2, 121, 248);
+  font-weight: 700;
+}
+
+.order-range {
+  display: flex;
+  flex-direction: row;
+}
+
+.green-line {
+  width: 75%;
+  height: 5px;
+  background-color: rgb(15, 224, 15);
+  display: flex;
+  justify-content: space-between;
+}
+
+.green-line-text {
+  width: 75%;
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.dot-text {
+  color: rgb(15, 224, 15);
+  font-weight: 600;
+}
+
+.dot {
+  position: relative;
+  padding: 10px;
+  background-color: rgb(15, 224, 15);
+  border-radius: 50%;
+  top: -7px;
+}
+
+.grey-line {
+  display: flex;
+  width: 25%;
+  height: 5px;
+  background-color: rgb(214, 208, 208);
+  justify-content: end;
+}
+
+.grey-dot {
+  position: relative;
+  padding: 10px;
+  background-color: rgb(214, 208, 208);
+  border-radius: 50%;
+  top: -7px;
+}
+
+.slim-line {
+  display: flex;
+  height: 2px;
+  width: 75%;
+  justify-content: end;
+  background-color: rgb(173, 169, 169);
+  margin-top: 40px;
+  margin-bottom: 30PX;
+}
+
+.slim-line img {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: -19px;
+}
+
+.shipement-details {
+  font-size: small;
+}
+
+/* wishlist page */
+.wishlist-product-image img {
+  width: 200px;
+  height: 190px;
+}
+
+.wishlist-carried-button {
+  margin-top: 20px;
+}
+
+.select-wishlist {
+  border: none;
+  padding: 5px;
+  background-color: rgb(234, 232, 228);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.add-to-cart {
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.remove-wishlist {
+  border: none;
+  background-color: transparent;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Return order page */
+/* All ul and li styling*/
+.all-list {
+  list-style: none;
+  margin-bottom: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.all-list li {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.all-list li:not(:first-child):hover {
+  color: orangered;
+  background-color: rgb(212, 207, 199);
+  font-weight: 700;
+}
+.selected-list, .selected-list a{
+  color: orangered !important;
+  background-color: rgb(212, 207, 199);
+  font-weight: 700;
+}
+
+/*My account div*/
+div.my-account img {
+  height: 80px;
+}
+
+/*middle section with return order and sort by text*/
+.top {
+  font-size: 15px;
+}
+
+div.sort select {
+  display: inline !important;
+  width: 150px;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sort span {
+  font-size: 13px;
+}
+
+/*product image with price tag section*/
+.product-details {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.product-data img {
+  display: block;
+
+}
+
+.product-image img {
+  height: 100%;
+  width: 80%;
+}
+
+.image-help p {
+  margin-top: 20px;
+}
+
+img[src="images/Group 2545.png"] {
+  display: inline;
+}
+
+/*Range section*/
+.range {
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+}
+
+.line {
+  position: relative;
+  background-color: red;
+  width: 60%;
+  height: 5px;
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.line::before {
+  position: absolute;
+  content: '';
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  top: -5.5px;
+  border-radius: 50%;
+  left: -1%;
+}
+
+.line::after {
+  position: absolute;
+  content: '';
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  top: -5.5px;
+  right: -1%;
+  border-radius: 50%;
+}
+
+img[src="images/Line 51.png"] {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.poly {
+  position: relative;
+  width: 63%;
+  display: flex;
+  justify-content: center;
+}
+
+.path-line {
+  width: 90%;
+}
+
+.path-poly {
+  position: absolute;
+  right: 1%;
+  height: 15px;
+  bottom: 20px;
+}
+
+/*confirmation text*/
+div.confirm-text {
+  display: flex;
+  flex-direction: row;
+  border-style: ridge;
+  vertical-align: middle;
+  justify-self: baseline;
+}
+
+div.confirm-text :first-child {
+  padding-top: 10px;
+}
+
+div.confirm-text strong {
+  color: rgb(50, 221, 50);
+}
+
+/*plus sign for reponsiveness of left sidebar*/
+.left-sidebar {
+  background-color: white;
+}
+
+#plus:checked+div.left-sidebar {
+  left: 0 !important;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+#plus,
+.plus {
+  display: none;
+  font-size: 40px;
+  width: fit-content;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Edit profile page */
+.form-details {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gender {
+  width: 100%;
+}
+
+.gender div {
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.male,
+.female {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.password {
+  width: 100%;
+  background-color: white;
+  color: orange;
+  font-weight: 700;
+  margin: 10px;
+  border: 1px solid rgb(197, 197, 197);
+  padding: 12px;
+}
+
+.Save-Details {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  font-weight: 700;
+  margin: 10px;
+  border: none;
+  padding: 12px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Checkout page */
+.payment-section {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.boxes {
+  border: 1px solid rgb(179, 177, 177);
+  margin: 30px;
+  font-weight: 700;
+  padding: 15px;
+  font-size: small;
+}
+
+.change-button button {
+  border: 1px solid rgb(179, 177, 177);
+  background-color: white;
+  color: orangered;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 4px 9px 4px 9px;
+}
+
+.correct-sign i {
+  background-color: orangered;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+.boxes-2 {
+  border: 1px solid rgb(179, 177, 177);
+  margin: 30px;
+}
+
+.boxes-2 ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.boxes-2 ul li {
+  padding: 10px;
+  border-right: 1px solid rgb(179, 177, 177);
+
+}
+
+.payment-methods {
+  color: rgb(179, 179, 179);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.payment-fill {
+  display: flex;
+  flex-direction: column;
+}
+
+.pay-button {
+  background-color: orangered;
+  color: white;
+  font-weight: 700;
+  border: none;
+  width: 80%;
+  padding: 5px;
+
+}
+
+.small-text {
+  font-size: 10px;
+  margin: 10px;
+}
+
+.trustpay-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(5, 190, 5);
+}
+
+.summery {
+  width: fit-content !important;
+  white-space: nowrap;
+  border: 1px solid rgb(179, 177, 177);
+}
+
+.summery p {
+  font-weight: 700;
+}
+
+.summery-details {
+  list-style: none;
+  padding-left: 0;
+}
+
+.summery-details li {
+  font-size: small;
+  padding-top: 6px;
+}
+
+.align-summery {
+  display: flex;
+  flex-direction: row;
+}
+
+.paying {
+  font-weight: 700;
+  display: flex;
+}
+
+.paying div {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.card-no input {
+  width: 60%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* FAQ page */
+/* heading in orange color */
+h3 {
+  color: rgb(255, 69, 0);
+  font-weight: 600;
+}
+
+/* contains all the css of div which is middle 
+which contains all questions */
+.FAQ {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-bottom: 1px solid grey;
+  flex-wrap: nowrap !important;
+  line-height: 30px;
+}
+
+/* this css to make divs to not wrap in small size of screens */
+.FAQ p:first-child {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+/* This class contain text which is hide and show on click of + icon*/
+.ans-FAQ {
+  display: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------  */
+/* login-register page */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+.main-section{
+  margin: auto;
+}
+.mid-section {
+  position: relative;
+  width: 35%;
+  margin-top: 20px;
+  box-shadow: 5px 10px 18px #888888;
+  padding-bottom: 10px;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.top-button-login {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  background-color: rgb(182, 181, 181);
+  color: black;
+}
+
+.top-button-login-active{
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  background-color: white;
+}
+.top-button-registration {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  background-color: rgb(182, 181, 181);
+  color: black;
+}
+
+.sign-in-b {
+  background-color: orange;
+  width: 100%;
+}
+
+.f-pass {
+  width: 100%;
+  border: 1px solid orange;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.login-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.top-button-login:hover {
+  color: orange;
+  background-color: white;
+}
+
+.top-button-registration:hover {
+  color: orange;
+  background-color: white;
+}
+.bottom-social{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.bottom-social img{
+  width: 80%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* My Cart page */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* applying css to a div which contain a product details */
+.product-container {
+  position: relative;
+}
+
+/* styling and positioning my cart heading  */
+.mycart-heading {
+  display: inline-block;
+}
+
+.mycart-heading span:first-child {
+  color: orangered;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.mycart-heading span:nth-child(2) {
+  font-weight: 600;
+}
+
+.total-price {
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  right: 0%;
+}
+
+/* applying css to added products */
+.holdall {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.added-product {
+  border: 1px solid rgb(217, 217, 217);
+  margin-bottom: 20px;
+}
+
+.product-pic {
+  margin: 10%;
+}
+
+.product-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.pro-info {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.pro-info button,
+select {
+  background: transparent;
+  border: none;
+  background-color: rgb(247, 244, 241);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.pricing {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.remove {
+  border-top: 1px solid rgb(217, 217, 217);
+  white-space: nowrap;
+}
+
+.remove button {
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  padding: 15px;
+
+}
+
+.delivery-text {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* styling the coupon box  */
+.coupon {
+  border: 1px solid rgb(217, 217, 217);
+  width: fit-content;
+  margin-top: 42px;
+}
+
+.coupons-header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.coupons-header button {
+  background: transparent;
+  border: 2px solid orangered;
+  color: orangered;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.coupons-header span {
+  margin: 10px;
+}
+
+/* styling ul list in coupon body */
+.coupon-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.coupon-price-details {
+  display: inline;
+  list-style: none;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.coupon-price-details-2 {
+  list-style: none;
+}
+
+.coupon-price-details li {
+  padding: 8px;
+}
+
+.coupon-list-area p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.total-calculated {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.place-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.place-order button {
+  width: 90%;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(246, 91, 35);
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.green {
+  color: rgb(33, 219, 33);
+
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Product listing page */
+/* changing the list style  */
+
+.list-of-filters {
+  list-style: none;
+  margin-bottom: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+ul.list-of-filters li input:checked {
+  accent-color: orangered;
+}
+
+/* increasing size of checkbox */
+input[type="checkbox"],
+input[type="radio"] {
+  height: 15px;
+  width: 15px;
+}
+
+/* showing 13-25 out of 76 text css */
+.show-more {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: orangered;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* product view css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  font-size: medium;
+}
+
+/* left side image column */
+#gallery-image {
+  display: inline-block;
+  width: fit-content;
+}
+
+#gallery-image img {
+  display: block;
+  height: 7vw;
+  width: 7vw;
+  margin-bottom: 10px;
+}
+
+/* middle big size image */
+.show-product {
+  display: inline;
+}
+
+.show-product img {
+  height: 100%;
+  width: 100%;
+}
+
+/* description sizing guide etc menu options */
+.description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description a {
+  font-size: 1rem;
+  font-weight: 700;
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s ease;
+  line-height: 3rem;
+  padding-right: 15px;
+
+}
+
+.description a:hover {
+  border-bottom-color: orangered;
+}
+
+/* size number decoration */
+.select-size img {
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* quantity image */
+.qty img {
+  height: 35px;
+}
+
+/* styling of add to cart and buy now buttons */
+.add-to-cart,
+.buy-now {
+  color: white;
+  background-color: orangered;
+  border: none;
+  height: 45px;
+  width: 30%;
+  border-radius: 10px;
+  white-space: nowrap;
+  font-size: 80%;
+}
+
+/* styling of heart icon infront of buy button */
+.shop-button img {
+  height: 65px;
+}
+
+/* social icons */
+.share-this {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.share-this img {
+  height: 30px;
+}
+
+/* delivery return image and text styling*/
+.delivery-return {
+  font-weight: 600;
+}
+
+.delivery-return img {
+  height: 45px;
+}
+
+.online-support {
+  margin-left: 20px;
+}
+
+/* Customer rating */
+.customer-review {
+  display: flex;
+  flex-wrap: nowrap;
+}
+img[src="images/Image 168.png"]{
+  width: 70%;
+}
+
+/* Write a product review button styling */
+.write-review {
+  color: white;
+  background-color: orangered;
+  width: 60%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* profile pic and name in comment  */
+.comment {
+  margin-bottom: 20px;
+}
+
+.pic-name img {
+  height: 40px;
+}
+
+.pic-name span {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+/* Helpful comment and report abuse button styling */
+.helpful {
+  color: white;
+  background-color: orangered;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* all text decoration under this code */
+.rating {
+  color: rgb(8, 204, 8);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pricing {
+  font-weight: 600;
+}
+.verified-purchase {
+  color: brown;
+  font-weight: 600;
+}
+
+.link a {
+  text-decoration: underline;
+  color: rgb(89, 89, 226);
+}
+
+/* realated product section */
+.related-product {
+  text-align: center;
+}
+
+.related-product img {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* seller page */
+/*styling of orange background section and images which it contains*/
+.seller-images {
+  position: relative;
+  background-color: rgb(255, 115, 0);
+  width: 100%;
+}
+
+.mid-images1 {
+  margin-top: 50px;
+}
+
+.mid-images2 {
+  flex-direction: column;
+  margin-top: 50px;
+
+}
+
+img[src="Images/Register in less than10 minutes !.png"] {
+  width: 270px;
+}
+
+img[src="Images/untitled-2.png"] {
+  height: 500px;
+}
+
+.or {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-image1 {
+  background-color: black;
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  width: 90%;
+}
+
+.contact-image2 {
+  background-color: black;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  width: 90%;
+}
+
+.contact-image1 img {
+  width: 70%;
+}
+
+.contact-image2 img {
+  width: 70%;
+}
+
+.register-feature {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.register-feature div img {
+  border-radius: 200px;
+  height: 110px;
+  margin-bottom: 30px;
+}
+
+/*contains register form */
+.register {
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  font-size: 14px;
+  vertical-align: middle;
+  width: 90%;
+}
+
+.register form input {
+  height: 25px !important;
+  margin-bottom: 20px;
+}
+
+/*styling select tag for alignment*/
+select.n-select {
+  width: 57% !important;
+  display: inline !important;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/*register today text which is in form*/
+.register-today {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.sign-in-b {
+  background-color: orange;
+  width: 100%;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/*styling of section which is comes after orange backgroud section*/
+.after-img {
+  text-align: center;
+  margin-top: 120px;
+  font-size: 25px;
+  font-family: serif !important;
+}
+
+/*styling text which is with 3 images of men*/
+.promises p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Thank You Page */
+.text {
+  text-align: center;
+  width: 35%;
+  box-shadow: 5px 10px 18px #888888;
+  margin-top: 80px;
+}
+
+.logo-class {
+  position: relative;
+  margin-bottom: 60px;
+  top: 40px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.purchase-text {
+  background-color: orange;
+  color: white;
+  width: 250px;
+  margin: auto;
+  padding: 3px;
+}
+
+.off-text {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+fieldset {
+  border: 1px solid black;
+  width: 250px;
+  margin: auto;
+
+}
+
+legend {
+  float: none;
+  font-size: 15px;
+  font-weight: 700;
+  width: fit-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.mid-text {
+  font-size: 50px;
+  font-weight: 700;
+  color: orange;
+}
+
+.legend2 {
+  display: block;
+  position: relative;
+  top: 10px;
+  background-color: white;
+  width: fit-content;
+  left: 30px;
+  font-weight: 700;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.coupon-code {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* profile page */
+/*middle section with details*/
+.profile-details ul {
+  list-style: none;
+}
+
+.profile-details ul li {
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*all details styling*/
+.ask {
+  display: inline;
+  width: 50%;
+  white-space: nowrap;
+}
+.ask ul{
+  padding: 0;
+}
+
+.ans {
+  display: inline;
+  width: 50%;
+  white-space: nowrap;
+}
+.ans ul{
+  padding: 0;
+}
+
+.ans li {
+  font-weight: 700;
+}
+
+.not-added {
+  color: grey;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Responsivness of all pages */
+/*home page responsivness*/
+@media (max-width: 992px) {
+  .logo-container {
+    display: none;
+  }
+
+  .offcan {
+    display: block;
+  }
+
+  .top-right-list {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .top-right-list-container-2 {
+    font-size: 1.7vw;
+    margin-top: 10px;
+
+  }
+
+  .top-right-list-2 li:not(:first-child, :last-child) {
+    margin-right: 9%;
+  }
+
+}
+
+@media (min-width:577px) {
+  .top-right-list-container-2 {
+    font-size: 1.7vw;
+    margin-top: 10px;
+    display: none;
+  }
+}
+
+@media (min-width:360px) and (max-width:576px) {
+  .top-right-list-2 {
+    display: flex;
+    font-size: 2.5vw;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .country {
+    width: 18px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .shop .carousel{
+    display: none;
+  }
+  .category-product{
+    display: flex;
+  }
+  .shop-now{
+    width: 14vw;
+    padding: 1vw;
+    font-size: 2vw;
+    box-shadow: 0px 3px 3px grey;
+  }
+  .latest-product-category{
+    justify-content: center;
+  }
+}
+
+@media (max-width:360px) {
+  .hero {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .top-right-list-2 {
+    display: flex;
+    font-size: 3vw;
+  }
+
+  .top-right-list-2 li:not(:first-child, :last-child) {
+    margin-right: 10px;
+  }
+
+  .country {
+    width: 15px;
+  }
+  .shop .carousel{
+    display: none;
+  }
+  .show-product{
+    display: flex;
+  }
+  .shop-now{
+    width: 14vw;
+    padding: 1vw;
+    font-size: 2vw;
+    box-shadow: 0px 3px 3px grey;
+  }
+  .latest-product-category{
+    justify-content: center;
+  }
+  .shop_heading{
+    font-size: 7vw;
+  }
+  .shop_navbar a{
+    font-size: 4vw;
+  }
+  
+}
+
+
+
+
+/*Seller page responsive*/
+@media only screen and (max-width: 962px) {
+  img[src="Images/Register in less than10 minutes !.png"] {
+    width: 170px;
+  }
+
+  img[src="Images/untitled-2.png"] {
+    height: 400px;
+  }
+
+}
+
+/*return order page*/
+@media only screen and (min-width:992px) {}
+
+/*This code is to make left sidebar responsive of return order*/
+@media only screen and (max-width:992px) {
+  .left-sidebar {
+    position: absolute !important;
+    left: -300px;
+    width: fit-content;
+    z-index: 1;
+    transition: 0.8s;
+  }
+
+  div.row label {
+    display: inline-block;
+    width: 10%;
+  }
+
+}
+
+/* My cart page responsiveness */
+@media only screen and (max-width: 992px) {
+  div.pro-info {
+
+    align-items: flex-start;
+  }
+
+  div.pricing {
+    align-items: flex-start;
+  }
+}
+
+/* Login and registration page*/
+@media (max-width:992px){
+  .mid-section{
+    width: 90%;
+  }
+}
+/* thank you page */
+@media (max-width:992px){
+.text{
+  width: 80%;
+}
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
