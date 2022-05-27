@@ -4,13 +4,13 @@ var selector = document.getElementById("selector");
 selector.onchange = () => {
     var selectedValue = selector.value;
     if (selectedValue == "india") {
-        document.getElementById("flag").setAttribute("src", "images/India.png");
+        document.getElementById("flag").setAttribute("src", "Images/India.png");
         document.getElementById("country-no").innerText = "+91 9838203708";
     } else if (selectedValue == "english") {
-        document.getElementById("flag").setAttribute("src", "images/Group 2560.png");
+        document.getElementById("flag").setAttribute("src", "Images/Group 2560.png");
         document.getElementById("country-no").innerText = "+43 9838203708";
     } else {
-        document.getElementById("flag").setAttribute("src", "images/germany.png");
+        document.getElementById("flag").setAttribute("src", "Images/germany.png");
         document.getElementById("country-no").innerText = "+45 9838203708";
     }
 }
@@ -370,11 +370,11 @@ async function fetchData() {
                         parentClass.innerHTML += `<div class="wishlist-product-container" >
                             <div class="wishlist-product row">
                                 <div class="col-lg-4 wishlist-product-image">
-                                    <img src="images/${item.imageName}.png" alt="">
+                                    <img src="Images/${item.imageName}.png" alt="">
                                 </div>
                                 <div class="col">
                                     <div class="bold">${item.name}</div>
-                                    <div><img src="images/Group 2545.png" alt="">
+                                    <div><img src="Images/Group 2545.png" alt="">
                                         <span>(2850)</span>
                                     </div>
                                     <span class="bold">${item.priceWithDiscount} </span><span class="faint"><del>${item.price}
