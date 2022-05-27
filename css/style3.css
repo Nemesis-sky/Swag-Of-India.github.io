@@ -192,7 +192,7 @@ img[src="Images/phone.png"] {
 .navbars li:hover .dropdown-content {
   display: flex;
 }
-#wishlist-count,#cart-count{
+#wishlist-count,#cart-count,#wishlist-count-2,#cart-count-2{
   padding: 4px;
   background-color: #f8881f;
   color: white;
@@ -731,6 +731,8 @@ div.carousel-indicators button {
 
 .wishlist-carried-button {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .select-wishlist {
@@ -741,12 +743,12 @@ div.carousel-indicators button {
   margin-top: 10px;
 }
 
-.add-to-cart {
+.add-to-cart{
   border: none;
   background-color: orange;
   color: white;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px; 
 }
 
 .remove-wishlist {
@@ -1280,7 +1282,6 @@ select {
 
 .remove {
   border-top: 1px solid rgb(217, 217, 217);
-  white-space: nowrap;
 }
 
 .remove button {
@@ -1472,7 +1473,7 @@ body {
 }
 
 /* styling of add to cart and buy now buttons */
-.add-to-cart,
+.add-to-cart-p,
 .buy-now {
   color: white;
   background-color: orangered;

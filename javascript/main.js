@@ -146,6 +146,7 @@ async function fetchData() {
                     if (document.getElementById("count-cart"))
                         document.getElementById("count-cart").innerHTML = Object.keys(productItems).length;
                     document.getElementById("cart-count").innerHTML = Object.keys(productItems).length;
+                    document.getElementById("cart-count-2").innerHTML = Object.keys(productItems).length;
                 }
             }
             // Storing data to local storage with all the calculation
@@ -385,7 +386,7 @@ async function fetchData() {
                                         </select>
                                     </div>
                                     <div class="wishlist-carried-button">
-                                        <button class="add-to-cart">Add To cart</button> |
+                                        <button class="add-to-cart">Add To cart</button> &nbsp;|&nbsp;
                                         <button class="remove-wishlist">Remove from wishlist</button>
                                     </div>
                                 </div>
@@ -403,6 +404,7 @@ async function fetchData() {
                     if (document.getElementById("count-wishlist-product"))
                         document.getElementById("count-wishlist-product").innerHTML = Object.keys(countWishlist).length;
                     document.getElementById("wishlist-count").innerHTML = Object.keys(countWishlist).length;
+                    document.getElementById("wishlist-count-2").innerHTML = Object.keys(countWishlist).length;
                 }
             }
 
